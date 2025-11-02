@@ -1107,27 +1107,118 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title fade-in">Professional Journey</h2>
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
-                <div class="timeline-item fade-in">
-                    <h3>Cybersecurity Intern</h3>
-                    <div class="company" style="color: var(--primary-pink); font-weight: bold; margin-bottom: 1rem;">Huntmetrics (via College Partnership)</div>
-                    <p><strong>Duration:</strong> 1 Month</p>
-                    <ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-top: 1rem;">
-                        <li>Conducted comprehensive penetration testing on web applications targeting OWASP Top 10 vulnerabilities</li>
-                        <li>Performed advanced reconnaissance and enumeration using Nmap, Shodan, and custom scripts</li>
-                        <li>Successfully identified and documented critical security flaws including SQL Injection, XSS, CSRF, and SSRF</li>
-                        <li>Created detailed vulnerability assessment reports with risk ratings and remediation strategies</li>
-                        <li>Gained hands-on experience with real-world exploitation techniques and post-exploitation analysis</li>
-                        <li>Collaborated with security team on threat modeling and risk assessment procedures</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Experience Section -->
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section-title fade-in">Professional Journey</h2>
+
+    <div class="experience-wrapper fade-in" style="display: flex; flex-direction: column; gap: 3rem; position: relative;">
+
+      <!-- Animated Vertical Line -->
+      <div style="
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(180deg, var(--primary-cyan), var(--primary-pink));
+        transform: translateX(-50%);
+        box-shadow: 0 0 20px rgba(0,255,255,0.4);
+      "></div>
+
+      <!-- Experience Card: Security Engineer -->
+      <div class="exp-card" style="
+        position: relative;
+        width: 48%;
+        align-self: flex-start;
+        background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02));
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 25px;
+        padding: 2.5rem;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 25px rgba(0,255,255,0.1);
+        transition: all 0.5s ease;
+      ">
+        <div style="
+          position: absolute;
+          right: -65px;
+          top: 40%;
+          width: 25px;
+          height: 25px;
+          background: linear-gradient(45deg, var(--primary-cyan), var(--primary-pink));
+          border-radius: 50%;
+          box-shadow: 0 0 20px rgba(0,255,255,0.6);
+        "></div>
+
+        <h3 style="color: var(--primary-cyan); font-size: 1.5rem;">Security Engineer</h3>
+        <p style="color: var(--primary-pink); font-weight: bold; margin-bottom: 1rem;">Trekshield | Jan 2025 – Present</p>
+
+        <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+          Blending offensive testing with secure engineering to harden real-world applications. 
+          I specialize in identifying race conditions, IDORs, and logic flaws while bridging the gap between hackers and builders.
+        </p>
+        <ul style="color: var(--text-secondary); padding-left: 1.2rem; line-height: 1.8;">
+          <li>Completed extensive PortSwigger labs and integrated those insights into live security assessments.</li>
+          <li>Developed custom PoCs demonstrating SQLi, authentication flaws, and business logic exploitation.</li>
+          <li>Delivered an internal <strong>SQL Injection Presentation</strong> with interactive demo labs.</li>
+          <li>Collaborated across engineering teams for remediation and secure code reviews.</li>
+        </ul>
+      </div>
+
+      <!-- Experience Card: Cybersecurity Intern -->
+      <div class="exp-card" style="
+        position: relative;
+        width: 48%;
+        align-self: flex-end;
+        background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02));
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 25px;
+        padding: 2.5rem;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 25px rgba(255,20,147,0.15);
+        transition: all 0.5s ease;
+      ">
+        <div style="
+          position: absolute;
+          left: -65px;
+          top: 40%;
+          width: 25px;
+          height: 25px;
+          background: linear-gradient(45deg, var(--primary-pink), var(--primary-cyan));
+          border-radius: 50%;
+          box-shadow: 0 0 20px rgba(255,20,147,0.6);
+        "></div>
+
+        <h3 style="color: var(--primary-cyan); font-size: 1.5rem;">Cybersecurity Intern</h3>
+        <p style="color: var(--primary-pink); font-weight: bold; margin-bottom: 1rem;">Huntmetrics | Aug 2025 – Sep 2025</p>
+
+        <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+          Immersed in red team assessments and vulnerability discovery, aligning practical testing with structured reporting.
+        </p>
+        <ul style="color: var(--text-secondary); padding-left: 1.2rem; line-height: 1.8;">
+          <li>Executed OWASP Top 10 testing and discovered SQLi, CSRF, and SSRF vulnerabilities.</li>
+          <li>Performed advanced recon and enumeration using Shodan, Nmap, and automation scripts.</li>
+          <li>Authored risk-based reports with CVSS scoring and mitigation plans.</li>
+          <li>Supported senior engineers in threat modeling and exploitation labs.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .exp-card:hover {
+    transform: scale(1.05) rotateY(5deg);
+    box-shadow: 0 25px 60px rgba(0,255,255,0.25);
+    border-color: var(--primary-cyan);
+  }
+
+  .exp-card:hover h3 {
+    color: var(--primary-pink);
+    text-shadow: 0 0 20px rgba(255,20,147,0.5);
+  }
+</style>
+
 
     <!-- Certifications Section -->
     <section id="certifications" class="section">
