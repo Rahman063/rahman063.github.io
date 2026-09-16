@@ -52,7 +52,6 @@ body::before{
   background:linear-gradient(90deg,var(--cyan),var(--pink));transition:.3s;transform:translateX(-50%);}
 .nav-links a:hover::after{width:100%;}
 .nav-links a:hover{color:var(--cyan);text-shadow:0 0 10px rgba(0,255,255,.6);}
-.mobile-menu{display:none;}
 
 /* HERO */
 .hero{padding:180px 0 100px;text-align:center;position:relative;min-height:100vh;display:flex;align-items:center;}
@@ -86,6 +85,7 @@ body::before{
 /* SUMMARY BANNER */
 .summary-banner{padding:2.5rem 3rem;text-align:center;margin-bottom:0;}
 .summary-banner p{color:var(--text2);font-size:1.05rem;max-width:900px;margin:0 auto;}
+.summary-banner strong{color:var(--gold);}
 
 /* SKILLS */
 .skills-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2.2rem;margin-top:2.5rem;}
@@ -194,9 +194,10 @@ body::before{
 <section class="section" style="padding-top:0;">
   <div class="container">
     <div class="card-base summary-banner fade-in">
-      <p>Active PortSwigger Web Security Academy practitioner (50+ labs completed) and globally ranked
-      HackTheBox player — Season 11 top performer across advanced Windows/Linux CTF machines covering
-      Active Directory exploitation, web RCE, and privilege escalation chains.</p>
+      <p>Active PortSwigger Web Security Academy practitioner — ranked <strong>#165 globally</strong> — and
+      globally ranked HackTheBox player, placing <strong>#1466 with Platinum Tier</strong> in Season 11 across
+      advanced Windows/Linux CTF machines covering Active Directory exploitation, web RCE, and privilege
+      escalation chains.</p>
     </div>
   </div>
 </section>
@@ -303,8 +304,16 @@ body::before{
     <h2 class="section-title fade-in">Independent Security Research & Bug Bounty</h2>
     <div class="card-base bounty-highlight fade-in">
       <h3>🏆 Research Highlights</h3>
-      <p>Responsible disclosure work and competitive CTF performance outside of client engagements</p>
+      <p>Responsible disclosure work and competitive CTF/leaderboard performance outside of client engagements</p>
       <div class="bounty-achievements">
+        <div class="bounty-item">
+          <h4>🥇 PortSwigger Academy</h4>
+          <p>Ranked #165 globally on the leaderboard</p>
+        </div>
+        <div class="bounty-item">
+          <h4>🎖️ HackTheBox — Season 11</h4>
+          <p>Ranked #1466 globally, Platinum Tier — Windows/Linux CTF, AD exploitation, web RCE, privilege escalation chains</p>
+        </div>
         <div class="bounty-item">
           <h4>🔑 Live AWS Keys</h4>
           <p>Exposed in client-side source code, responsibly disclosed</p>
@@ -320,10 +329,6 @@ body::before{
         <div class="bounty-item">
           <h4>🎯 Clickjacking</h4>
           <p>Reported via coordinated disclosure</p>
-        </div>
-        <div class="bounty-item">
-          <h4>🥇 HackTheBox — Season 11</h4>
-          <p>Globally ranked top performer; Windows/Linux CTF, AD exploitation, web RCE, privilege escalation chains</p>
         </div>
       </div>
     </div>
